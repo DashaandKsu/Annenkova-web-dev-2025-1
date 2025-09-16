@@ -1,11 +1,15 @@
-/* Универсальные стили */
+
 * {
     box-sizing: border-box;
 }
 
-/* Основные переменные */
+html {
+    scroll-behavior: smooth;
+}
+
+
 :root {
-    --primary-color: #28a745; /* Зеленый */
+    --primary-color: #28a745; 
     --text-color: #333;
     --bg-color: #f8f9fa;
     --white: #ffffff;
@@ -150,7 +154,8 @@ footer a:hover {
     color: var(--primary-color);
 }
 
-/* Адаптивность */
+/* Адаптивность и медиа-запрос для планшетов и мобильных устройств,
+ применяет стили только когда ширина экрана 768 пикселей или меньше*/
 @media (max-width: 768px) {
     .container {
         padding: 0 15px;
